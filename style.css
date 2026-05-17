@@ -1,0 +1,151 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+  background:#f6f7fb;
+  color:#1f2937;
+}
+header{
+  background:#0b1220;
+  color:white;
+  padding:15px 8%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  flex-wrap:wrap;
+}
+
+.logo{
+  font-size:20px;
+  font-weight:700;
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+nav{
+  display:flex;
+  gap:15px;
+  flex-wrap:wrap;
+}
+
+nav a{
+  color:white;
+  text-decoration:none;
+  padding:8px 12px;
+  border-radius:6px;
+  transition:0.3s;
+}
+
+nav a:hover{
+  background:#2563eb;
+}
+
+/* HERO */
+.hero{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:70px 8%;
+  gap:40px;
+  flex-wrap:wrap;
+  background:white;
+}
+
+.hero-text{
+  flex:1;
+}
+
+.hero-text h1{
+  font-size:42px;
+  margin-bottom:15px;
+}
+
+.hero-text p{
+  margin-bottom:20px;
+  color:#555;
+}
+
+.hero img{
+  width:100%;
+  max-width:500px;
+  border-radius:12px;
+}
+
+/* BUTTON */
+.btn{
+  display:inline-block;
+  background:#2563eb;
+  color:white;
+  padding:12px 18px;
+  border-radius:6px;
+  text-decoration:none;
+}
+
+/* SERVICES */
+.section{
+  padding:60px 8%;
+  text-align:center;
+}
+
+.cards{
+  display:flex;
+  gap:20px;
+  flex-wrap:wrap;
+  justify-content:center;
+  margin-top:30px;
+}
+
+.card{
+  background:white;
+  width:280px;
+  padding:20px;
+  border-radius:12px;
+  box-shadow:0 5px 20px rgba(0,0,0,0.08);
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-8px);
+}
+
+.card img{
+  width:100%;
+  border-radius:10px;
+  margin-bottom:10px;
+}
+
+footer{
+  background:#0b1220;
+  color:white;
+  text-align:center;
+  padding:20px;
+  margin-top:40px;
+}
+form{
+  max-width:500px;
+  margin:auto;
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+}
+
+input,textarea{
+  padding:12px;
+  border:1px solid #ccc;
+  border-radius:6px;
+}
+
+@media(max-width:768px){
+  .hero{
+    flex-direction:column;
+    text-align:center;
+  }
+
+  nav{
+    justify-content:center;
+  }
+}
